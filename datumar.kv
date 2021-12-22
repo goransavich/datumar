@@ -1,0 +1,29 @@
+<DatumarWidget>
+    BoxLayout
+        orientation: "vertical"
+        size: root.width, root.height
+
+        Label:
+            text: "Unesi početak radnog staža:"
+            font_size: 28
+            background_color: (35/255, 116/255, 247/255, 1)
+
+        Label:
+            text: "Unesi kraj radnog staža:"
+            font_size: 28
+            background_color: (35/255, 116/255, 247/255, 1)
+
+        Label:
+            text: root.label_result
+            font_size: 20
+            background_color: (30/255, 16/255, 24/255, 1)
+
+        Button:
+            id: label1
+            text: "Izracunaj"
+            font_size: 43
+            halign: "center"
+            size_hint: (1, 0.19)
+            background_color: (35/255, 116/255, 247/255, 1)
+            foreground_color: (1,1,1,1)
+            on_press: root.result()
