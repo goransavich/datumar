@@ -5,25 +5,78 @@
 
         Label:
             text: "Unesi početak radnog staža:"
-            font_size: 28
-            background_color: (35/255, 116/255, 247/255, 1)
+            font_size: 18
+            background_color: (230/255, 244/255, 245/255, 1)
+            color: (245/255, 130/255, 15/255, 1)
+            size_hint: (1, 0.2)
 
+        GridLayout:
+            cols:3
+            rows:1
+            size_hint: (1, 0.1)
+
+            TextInput:
+                id: dan_pocetak
+                hint_text: "Dan"
+                halign: "center"
+                valign: 'center'
+                font_size: 18
+                multiline: False
+            TextInput:
+                id: mesec_pocetak
+                hint_text: "Mesec"
+                halign: "center"
+                valign: 'center'
+                font_size: 18
+                multiline: False
+            TextInput:
+                id: godina_pocetak
+                hint_text: "Godina"
+                halign: "center"
+                valign: 'center'
+                font_size: 18
+                multiline: False
         Label:
             text: "Unesi kraj radnog staža:"
-            font_size: 28
-            background_color: (35/255, 116/255, 247/255, 1)
+            font_size: 18
+            color: (35/255, 116/255, 247/255, 1)
+            size_hint: (1, 0.2)
 
+        GridLayout:
+            cols:3
+            rows:1
+            size_hint: (1, 0.1)
+
+            TextInput:
+                id: dan_kraj
+                hint_text: "Dan"
+                halign: "center"
+                font_size: 18
+                multiline: False
+            TextInput:
+                id: mesec_kraj
+                hint_text: "Mesec"
+                halign: "center"
+                font_size: 18
+                multiline: False
+            TextInput:
+                id: godina_kraj
+                hint_text: "Godina"
+                halign: "center"
+                font_size: 18
+                multiline: False
         Label:
             text: root.label_result
             font_size: 20
             background_color: (30/255, 16/255, 24/255, 1)
+            size_hint: (1, 0.2)
 
         Button:
-            id: label1
+            id: button1
             text: "Izracunaj"
-            font_size: 43
+            font_size: 20
             halign: "center"
-            size_hint: (1, 0.19)
+            size_hint: (1, 0.2)
             background_color: (35/255, 116/255, 247/255, 1)
             foreground_color: (1,1,1,1)
             on_press: root.result()
